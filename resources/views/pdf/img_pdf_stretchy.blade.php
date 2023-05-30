@@ -1,0 +1,1 @@
+<img src="{{ $src }}" class="{{ $imgClass }}" style="width: {{ $width }}; height: {{ $height }}"/>

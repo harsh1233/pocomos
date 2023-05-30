@@ -1,0 +1,5 @@
+<p>{{ $params['profile']['customer_details']['first_name'] }},</p>
+
+<p>Your property located at {{ isset($params['profile']['customer_details']['contact_address']['street']) ? $params['profile']['customer_details']['contact_address']['street']:'' }} in {{ isset($params['profile']['customer_details']['contact_address']['city']) ? $params['profile']['customer_details']['contact_address']['city'] : '' }}, {{ isset($params['profile']['customer_details']['contact_address']['region']['code']) ? $params['profile']['customer_details']['contact_address']['region']['code'] : '' }} is scheduled to be serviced by {{ isset($params['slot']['route_detail']['technician_detail']['user_detail']['user_details']['first_name']) ? $params['slot']['route_detail']['technician_detail']['user_detail']['user_details']['first_name'] : '' }} on {{ date('m/d/y', strtotime($params['slot']['job_detail']['date_scheduled'])) }} {{ isset($params['timeWindow']) ? $params['timeWindow'] : '' }}</p>
+
+<p>Last Service Date: {{ date('m/d/y', strtotime($params['profile']['customer_details']['state_details']['last_service_date'])) }}</p>

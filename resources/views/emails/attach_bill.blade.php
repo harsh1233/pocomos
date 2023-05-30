@@ -1,0 +1,1 @@
+<p>Attached is a bill displaying an owed balance. Please remit payment at your earliest convenience.</p>

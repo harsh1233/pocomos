@@ -1,0 +1,1 @@
+<img src="<?php echo url('view_file/'.$id)?>" style="width:<?= $width?>px; height: <?= $height?>px">
